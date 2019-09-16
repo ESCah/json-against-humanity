@@ -73,7 +73,7 @@ compact = {
     'decks': decks
 }
 compactdump = json.dumps(compact).encode('utf8')
-with open('compact.md.json', 'w') as outfile:
+with open('compact.md.json', 'wb') as outfile:
     outfile.write(compactdump)
     outfile.flush()
 
@@ -88,6 +88,6 @@ full = {
     "metadata": decks
 }
 fulldump = json.dumps(full).encode('utf8')
-with open('full.md.json', 'w') as outfile:
+with open('full.md.json', 'wb') as outfile:
     outfile.write(fulldump)
     outfile.flush()
